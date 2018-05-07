@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>flight</title>
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	</head>
+	<body>
+		<div id="container">
+			<h3><i class="fas fa-plane"></i> Elegí tu vuelo</h3>
+			<form>
+				<section class="flights">
+					<article>
+						<label>Origen</label>
+						<select id="origen" class="obligatorio">
+							<option value="0">Seleccioná</option>
+							<option value="BsAs">Buenos Aires</option>
+							<option value="Cordoba">Córdoba</option>
+							<option value="Mendoza">Mendoza</option>
+							<option value="RioNegro">Río Negro</option>
+							<option value="Ushuaia">Ushuaia</option>
+						</select><span class="obl">*</span> <span class="error or"></span>
+					</article>
+					<article>
+						<label>Destino</label>
+						<select id="destino" class="obligatorio">
+							<option value="0">Seleccioná</option>
+							<option value="BsAs">Buenos Aires</option>
+							<option value="Cordoba">Córdoba</option>
+							<option value="Mendoza">Mendoza</option>
+							<option value="RioNegro">Río Negro</option>
+							<option value="Ushuaia">Ushuaia</option>
+						</select> <span class="obl">*</span><span class="error dest"></span>
+					</article>
+					<article>
+						<label>Fecha</label>
+						<input type="date" id="date" class="obligatorio"> <span class="obl">*</span><span class="error fecha"></span>
+					</article>
+					<article>
+						<label>Cantidad</label>
+						<input type="number" id="cant" min="1" class="obligatorio"> <span class="obl">*</span><span class="error can"></span>
+					</article>
+					<article class="last">
+						<div>
+							<input type="radio" name="seat" class="seat obligatorio" value="ventana"> <span>Ventana</span>
+						</div>
+						<div class="pas">
+							<input type="radio" name="seat" class="seat obligatorio" value="pasillo"> <span>Pasillo</span> 
+							<span class="obl">*</span><span class="error asiento"></span>
+						</div>
+					</article>
+					<article>
+						<button type="submit" id="buy">comprar</button>
+					</article>
+				</section>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/fontawesome-all.js"></script>
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+#container{
+	border: 2px solid #000088;
+	width: 400px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+}
+h3{
+	border: 2px solid #000088;
+	background-color: #000088;
+	width: 100%;
+	color:white;
+	line-height: 50px;
+	padding-left: 10px;
+	font-family:  'Merriweather', sans-serif;
+}
+form{
+	margin-bottom: 10px;
+}
+section{
+	padding: 0 10px;
+}
+article{
+	margin: 20px 0;
+}
+label, .seat{
+	margin-right: 7px;
+}
+select{
+	width: 120px;
+}
+select, input{
+	margin-right:10px;
+}
+.pas{
+	margin-left: 20px;
+}
+#cant{
+	width: 50px;
+}
+.last {
+	display: flex;
+	justify-content: flex-start;
+}
+#buy{
+	background-color: #000088;
+	font-variant: small-caps;
+	color:#fff;
+	height: 30px;
+	float:right;
+	width: 100px;
+}
+.obl{
+	color:red;
+	margin-left: 10px;
+}
+.error{
+	color:red;
+	font-size: 0.8em;
+}
