@@ -14,7 +14,7 @@ $('#buy').on('click', function(e){
             destino: $("#destino").val(),
             fecha: $("#date").val(),
             cantidad: $("#cant").val(),
-            asiento: $(".seat").val(),
+            asiento: $(".seat").filter(':checked').val(),
         };
 
         flights.push(data);
@@ -37,13 +37,12 @@ function validate(){
         var destino = $("#destino").val();
         var fecha = $("#date").val();
         var cantidad = $("#cant").val();
-        var asiento = $(".seat").val();
+        var asiento = $(".seat").filter(':checked').val();
 
         if (origen == 0){
             let errores = $('.or');
             $.each(errores,function(indice,elemento){
                 elemento.textContent = "Campo obligatorio";
-                $('.obl').hide();
             });
             return false;
         }
@@ -51,7 +50,6 @@ function validate(){
             let errores = $('.dest');
             $.each(errores,function(indice,elemento){
                 elemento.textContent = "Campo obligatorio";
-                $('.obl').hide();
             });
             return false;
         }
@@ -59,7 +57,6 @@ function validate(){
             let errores = $('.fecha');
             $.each(errores,function(indice,elemento){
                 elemento.textContent = "Campo obligatorio";
-                $('.obl').hide();
             });
             return false;
         }
@@ -67,7 +64,6 @@ function validate(){
             let errores = $('.can');
             $.each(errores,function(indice,elemento){
                 elemento.textContent = "Campo obligatorio";
-                $('.obl').hide();
             });
             return false;
         }
@@ -75,7 +71,6 @@ function validate(){
             let errores = $('.asiento');
             $.each(errores,function(indice,elemento){
                 elemento.textContent = "Campo obligatorio";
-                $('.obl').hide();
             });
             return false;
         }
