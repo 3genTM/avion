@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Comprar Pasajes</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <header>
+      <h1><a id='logo' href="index.html"><img src="imgs/logo1.png" alt="logo"></a></h1>
+    </header>
+
+    <div class="main-container">
+      <form class="form-container" action="" method="post">
+        <h2><i class="fas fa-plane"></i> Elegí tu viaje!</h2>
+        <div class="rowBox">
+          <div class="colBox">
+            <label>Origen</label>
+              <select id="origen" name="Orig" class="oblig">
+                <option value="-1" disabled selected>Ingresá desde dónde viajas...</option>
+                <option value="1">Retiro</option>
+                <option value="2">Liniers</option>
+              </select>
+              <label id="errorOrigen" class="error"></label>
+          </div>
+
+          <div class="colBox">
+            <label>Destino</label>
+              <select id="destino" name="Dest" class="oblig">
+                <option value="-1" disabled selected>Ingresá hacia dónde viajas...</option>
+                <option value="1">San Luis</option>
+                <option value="2">Mendoza</option>
+              </select>
+              <label id="errorDestino" class="error"></label>
+          </div>
+        </div>
+
+        <div class="rowBox">
+          <div class="colBox">
+            <label>Fecha</label>
+              <input id="date" type="date" name="departureDate" class="oblig">
+              <label id="errorDate" class="error"></label>
+          </div>
+
+          <div class="colBox">
+            <label>Cantidad</label>
+              <select id="cantidad" name="quantity" class="oblig">
+                <option value="-1" disabled selected>Pasajeros...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+              <label id="errorCantidad" class="error"></label>
+          </div>
+        </div>
+
+        <div class="rowBox">
+          <label>Preferencia Ubicación</label>
+        </div>
+        <div class="rowBox">
+          <div class="rowRadioBox"><input class="selectSeat" type="radio" name="seat" value="V"><label for="seatW" class="opciones">Ventana</label></div>
+          <div class="rowRadioBox"><input class="selectSeat" type="radio" name="seat" value="P"> <label for="seatH" class="opciones">Pasillo</label></div>
+        </div>
+        <div class="rowBox">
+          <label id="errorUbicación" class="error"></label>
+        </div>
+        <div class="rowBox">
+          <button id="comprar">COMPRAR</button>
+        </div>
+
+      </form>
+
+      <div class="sale">
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

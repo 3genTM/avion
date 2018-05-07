@@ -1,0 +1,103 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+header {
+  width: 100%;
+  min-height: 80px;
+  padding: 5px;
+  display: flex;
+  border-bottom: 6px ridge #EDEDED;
+}
+
+h1 {
+  width: 50%;
+  margin-left: 25px
+}
+
+header img {
+  height: 100px
+}
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-container {
+  width: 40%;
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #FBBF64;
+  border-radius: 18px;
+}
+
+.rowBox {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.colBox{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowRadioBox {
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+
+select, input {
+  border-radius: 4px;
+  width: 90%;
+  height: 30px;
+  border-style: none;
+}
+
+.selectSeat {
+  width: 20px;
+  height: 20px;
+  margin: auto 5px;
+}
+
+#comprar{
+  width: 90%;
+  height: 40px;
+  margin: 8px auto;
+  padding: 0 25px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #ecf0f1;
+  border-width: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2ecc71;
+  cursor: pointer;
+  outline: none;
+}
+
+#comprar:hover, #comprar:focus {
+  background-color: #27ae60;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+
+.sale {
+  width: 55%;
+  margin: 20px auto;
+  background-color: #D8616D;
+  border-radius: 18px;
+}
