@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> ejercicio grupal avion </title>	
+<link rel="stylesheet" type="text/css" href="styles.css">	
+</head>
+<body>
+	<div class="container">
+		<h1> Grupo 5  </h1>
+			<div class="form">
+				<form action="#" method="post" id="form">
+				<label>Origen</label>
+					<select class="obligatorio" id="origen" name="origen">
+					  <option value="-1">Elige una opcion...</option>
+					  <option value="Rosario">Rosario</option>
+					  <option value="Cordoba">Cordoba</option>
+					  <option value="Bahia Blanca">Bahia Blanca</option>
+					  <option value="Santa Rosa">Santa Rosa</option>
+					</select>
+					<label class="mjeObligatorio"></label>
+					<br>
+					<br>
+				<label>Destino</label>
+					<select class="obligatorio" id="Destino" name="destino">
+					  <option value="-1">Elige una opcion...</option>
+					  <option value="Rosario">Rosario</option>
+					  <option value="Cordoba">Cordoba</option>
+					  <option value="Bahia Blanca">Bahia Blanca</option>
+					  <option value="Santa Rosa">Santa Rosa</option>
+					</select>
+					<label class="mjeObligatorio"></label>
+					<br><br>
+				<label>Fecha</label>
+					<input class="fechaObligatorio" type="date" id="fecha" required>
+					<label class="mjeFechaObligatorio"></label>
+					<br>
+					<br>
+				<label>Cantidad</label>
+					<select class="obligatorio" id="Cantidad" name="cantidad">
+					  <option value="-1">Cantidad...</option>
+					  <option value="1">1</option>
+					  <option value="2">2</option>
+					  <option value="3">3</option>
+					  <option value="4">4</option>
+					  <option value="5">5</option>
+					  <option value="6">6</option>
+					  <option value="7">7</option>
+					  <option value="8">8</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					</select>
+					<label class="mjeObligatorio"></label>
+					<br><br>
+
+					<input id="ventana" type="radio" name="ubicacion" value="ventana">
+					<label>Ventana</label>
+					<input id="pasillo" type="radio" name="ubicacion" value="pasillo">
+					<label>Pasillo</label>
+					<label class="mjeRadioObligatorio"></label>
+				</form>	
+			</div>		
+			<br><br>
+		<button id="comprar" class="boton">Comprar</button>
+	</div> 
+<script type="text/javascript" src="js/jquery3.min.js"> </script>
+<script type="text/javascript" src="js/index.js"></script>  
+</body>
+</html>
