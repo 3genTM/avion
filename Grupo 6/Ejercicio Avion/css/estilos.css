@@ -1,0 +1,13 @@
+.error, #ventana, #pasillo, #roja {
+	color:crimson;
+	text-transform:uppercase;
+	font-size:0.7em;
+}
+
+.container {
+	
+}
+
+.fila {
+	margin:10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="fila" id="fila_uno">
+				<label for="origen">Origen</label>
+				<select id="origen" class="seleccion obligatorio">
+					<option value="0">Elige una opción</option>
+					<option value="1">Origen uno</option>
+					<option value="2">Origen dos</option>
+					<option value="3">Origen tres</option>
+					<option value="4">Origen cuatro</option>
+				</select>
+				<label class="error"></label>
+				<label  for="destino">Destino</label>
+				<select id="destino" class="seleccion obligatorio">
+					<option value="0">Elige una opción</option>
+					<option value="1">Destino uno</option>
+					<option value="2">Destino dos</option>
+					<option value="3">Destino tres</option>
+					<option value="4">Destino cuatro</option>
+				</select>
+				<label class="error"></label>
+			</div>
+			<div class="fila" id="fila_dos">
+				<label for="fecha">Fecha</label>
+				<input id="fecha" type="date" min="07052018"/>
+				<label id="roja"></label>
+				<label for="cantidad">Cantidad</label>
+				<select id="cantidad" class="seleccion obligatorio">
+					<option value="0">Elige una opción</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<label class="error"></label>
+			</div>
+			<div class="fila" id="fila_tres">
+				<input type="radio" name="ubicacion" id="ventana"/><label>Ventana</label>
+				<input type="radio" name="ubicacion" id="pasillo"/><label>Pasillo</label>
+				<label id="error_ubicacion" class="error"></label>
+				<input id="boton" type="button" value="comprar"/>
+			</div>
+	</form>
+	</div>
+	<!--scipts-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
