@@ -35,7 +35,7 @@ function crearObjeto(){
   var pasajeJSON = JSON.stringify(pasaje);
   console.log(pasajeJSON)
 
-  $('#comprar').on('click',(e)=>{
+
 
  // let values = {'asiento': $('#asiento').val()};   
                                     
@@ -56,7 +56,6 @@ function crearObjeto(){
                   console.log("error");
           }
         }); 
-});
 }
 
 $('#comprar').on("click" , (e)=>{
