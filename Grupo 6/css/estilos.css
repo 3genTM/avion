@@ -4,10 +4,26 @@
 	font-size:0.7em;
 }
 
+.error {
+	display:block;
+}
+
+body {
+	background-image: url("../img/fondo.jpg");
+}
+
 .container {
-	
+	width:20%;
+	margin:50px auto;
+	background:white;
+	height:400px;
+	padding:50px;
 }
 
 .fila {
 	margin:10px;
+}
+
+div {
+	margin:15px;
 }
