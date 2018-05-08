@@ -53,6 +53,14 @@ $("#comprar").on("click", function(e) {
 
     let dataStr = JSON.stringify(jsonInfo);
     localStorage.setItem("info", dataStr);
+
+    //borrar datos
+    var input = $("input");
+    $.each(input, function(indice, elemento) {
+      if (elemento.type != "button") {
+        $(elemento).val("");
+      }
+    });
   }
 });
 
