@@ -1,6 +1,11 @@
 var jsonTrip = {};
 var savedTrips = JSON.parse(localStorage.getItem("jsonTrip"));
-var myTrips = savedTrips ? savedTrips.trips : [];
+var myTrips = savedTrips ? savedTrips.trips : []; // operador ternario equivale a:
+// if (savedTrips) {
+//   myTrips = savedTrips.trips;
+// } else {
+//   myTrips = []
+// }
 
 // Checking empty fields
 function validate() {
@@ -32,7 +37,10 @@ function validate() {
 
 // Check Radio Buttons
 function checkRadioBtn() {
-  var test = item => item.checked;
+  var test = item => item.checked; // Equivale a:
+// function(item) {
+  // return item.checked
+// }
   var opciones = Array.from($('.selectSeat'));
   return opciones.some(test);
 }
@@ -76,5 +84,40 @@ $("#comprar").on("click",function() {
   if (validate()) {
     saveTrip();
     cleanAll();
+    let jsonTripString = JSON.stringify(jsonTrip);
+    $.ajax({
+      url: "http://mariabelenalegre.com/adApi/avion/checkPasaje.php",
+      type: "post",
+      data: jsonTripString,
+      success: function (response) {
+        console.log(response);
+        if(response){
+          let resultado = JSON.parse(response);
+          console.log(resultado.mensaje);
+          alert("Ok");
+        }else{
+          alert("Error"); // Si esta vacio
+          console.log(response);
+        }
+      },
+      error: function(response) {
+        console.log("error");
+      }
+    });
+    // $.ajax({
+    //   url: "http://mariabelenalegre.com/adApi/avion/checkPasaje.php",
+    //   type: "post",
+    //   data: jsonTripString,
+    //   success: function (response) {
+    //     if (response == 1) {
+    //       alert("Ok");
+    //     } else {
+    //       alert("Error");
+    //     }
+    //   },
+    //   error: function(response) {
+    //     console.log("error");
+    //   }
+    // });
   }
 });
