@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="origen">
+        <label for="">Origen
+        <select class="obligatorio" name="origen" id='origen'>
+          <option value="-1"></option>
+          <option value="Paris">Paris</option>
+          <option value="London">London</option>
+          <option value="Amsterdam">Amsterdam</option>
+        </select>
+        </label>
+        <label class="errorOrigen error"></label>
+      </div>
+
+      <div class="destino">
+        <label for="">Destino</label>
+        <select class="obligatorio" name="destino" id="destino">
+          <option value="-1"></option>
+          <option value="Paris">Paris</option>
+          <option value="London">London</option>
+          <option value="Amsterdam">Amsterdam</option>
+        </select>
+
+        <label class="errorDestino error"></label>
+      </div>
+
+      <div class="fecha">
+        <label for="">Fecha
+        <input id="fecha" class="obligatorio" type="date" name="fecha" value="">
+        </label>
+        <label class="errorFecha error"></label>
+      </div>
+
+      <div class="">
+        <label for="">Cantidad
+          <input id="cant" class="obligatorio" type="number" name="cantidad" value="">
+          </label>
+          <label class="errorCant error"></label>
+      </div>
+
+      <div class="btns">
+        <label>Ventana
+        <input type="radio" name="asiento" value="Ventana">
+        </label>
+        <label>Pasillo
+        <input type="radio" name="asiento" value="Pasillo">
+        </label>
+        <label class="errorAsiento error"></label>
+      </div>
+
+      <div class="comprar">
+        <button type="button" name="button">Comprar</button>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/main.js">
+
+    </script>
+  </body>
+</html>

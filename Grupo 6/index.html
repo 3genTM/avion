@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<form>
-			<div class="fila" id="fila_uno">
+			<div id="origen">
 				<label for="origen">Origen</label>
 				<select id="origen" class="seleccion obligatorio">
 					<option value="0">Elige una opción</option>
@@ -18,6 +18,8 @@
 					<option value="4">Origen cuatro</option>
 				</select>
 				<label class="error"></label>
+			</div>
+			<div id="destino">
 				<label  for="destino">Destino</label>
 				<select id="destino" class="seleccion obligatorio">
 					<option value="0">Elige una opción</option>
@@ -28,10 +30,12 @@
 				</select>
 				<label class="error"></label>
 			</div>
-			<div class="fila" id="fila_dos">
+			<div>
 				<label for="fecha">Fecha</label>
 				<input id="fecha" type="date" min="07052018"/>
 				<label id="roja"></label>
+			</div>
+			<div id="cantidad">
 				<label for="cantidad">Cantidad</label>
 				<select id="cantidad" class="seleccion obligatorio">
 					<option value="0">Elige una opción</option>
@@ -42,12 +46,14 @@
 				</select>
 				<label class="error"></label>
 			</div>
-			<div class="fila" id="fila_tres">
+			<div id="ubicaciones">
+				<label>Ubicación</label>
 				<input type="radio" name="ubicacion" id="ventana"/><label>Ventana</label>
 				<input type="radio" name="ubicacion" id="pasillo"/><label>Pasillo</label>
 				<label id="error_ubicacion" class="error"></label>
-				<input id="boton" type="button" value="comprar"/>
+				
 			</div>
+			<input id="boton" type="button" value="comprar"/>
 	</form>
 	</div>
 	<!--scipts-->

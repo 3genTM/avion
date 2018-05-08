@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Helvetica;
+}
+
+.container-all {
+	border: 2px solid #900c3f;
+	width: 30%;
+	margin: 20px auto;
+}
+
+h1 {
+	background-color: #900c3f;
+	color: #fff;
+	padding: 5px 0px 5px 5px;
+}
+
+.formulario {
+	padding: 5px;
+}
+
+.origen,
+.destino,
+.origen p,
+.destino p {
+	display: inline-block;
+}
+
+.origen,
+.destino,
+.fecha-cantidad,
+.lugares {
+	margin: 10px 0px 10px 0px;
+}
+
+.fecha-cantidad input {
+	margin-left: 8px;
+}
+
+.lugares #pasillo {
+	margin-left: 10px;
+}
+
+.container-button {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container-button button {
+	border: none;
+	background-color: #900c3f;
+	color: #fff;
+	padding: 5px 15px;
+}
+
+.container-button button:hover {
+	background-color: #581845;
+	cursor: pointer;
+}
+
+#errores {
+	position: absolute;
+	color: red;
+	top: 178px;
+}
+
+#info-enviada {
+	position: absolute;
+	color: #5157ff;
+	top: 178px;
+}
