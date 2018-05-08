@@ -52,6 +52,22 @@ function guardarDatos() {
   let dataStr = JSON.stringify(jsonInfo);
   localStorage.setItem("info", dataStr);
 
+  $.ajax({
+    url: "http://mariabelenalegre.com/adApi/avion/checkPasaje.php",
+    type: "post",
+    data: jsonInfo,
+    success: function(response) {
+      if (response) {
+        alert("Ya puedes imprimir tu pasaje.");
+      } else {
+        alert("Error");
+      }
+    },
+    error: function(response) {
+      console.log("Error, vuelva a intentarlo.");
+    }
+  });
+
   //borrar datos
   var input = $("input");
   $.each(input, function(indice, elemento) {
