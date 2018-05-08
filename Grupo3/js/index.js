@@ -20,6 +20,14 @@ function validarForm (){
   }
   }
 
+  let ventana = $("#ventana");
+  let pasillo = $("#pasillo");
+
+  if (!ventana.is(":checked") && !pasillo.is(":checked")) {
+    valido = false;
+    error[i].innerHTML = "Campo Obligatorio";
+  }
+
   if (valido == true) {
   crearObjeto();
 }
@@ -46,7 +54,7 @@ function crearObjeto(){
           data: pasajeJSON,
           success: function (response) {
                                                      
-            if(response == 1){
+            if(response){
                                                  
                    alert("Ok");
             }else{
