@@ -1,12 +1,12 @@
 var valido = true;
 var pasajesArray;
-var pasajeStorage = localStorage.getItem('pasajes').Pasajes;
+var pasajeStorage = localStorage.getItem('pasajes');
 
 if (pasajeStorage==null) {
   pasajesArray=[]
   console.log(pasajesArray)
 }else{
-  pasajesArray = pasajeStorage
+  pasajesArray = JSON.parse(pasajeStorage).Pasajes;
 
   console.log(pasajesArray)
 }
