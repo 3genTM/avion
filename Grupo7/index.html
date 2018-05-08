@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elegi tu vuelo</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<section class="container-all">
+		<h1>Elegí tu vuelo</h1>
+		<form class="formulario">
+			<div class="origen">
+				<p>Origen</p>
+				<select id="origen">
+					<option>Buenos aires</option>
+					<option>Cordoba</option>
+					<option>Mendoza</option>
+					<option>Santa Fe</option>
+				</select>
+			</div>
+			<div class="destino">
+				<p>Destino</p>
+				<select id="destino">
+					<option>Misiones</option>
+					<option>Santa Cruz</option>
+					<option>Tierra del Fuego</option>
+					<option>Tucuman</option>
+				</select>	
+			</div>
+			<div class="fecha-cantidad">
+				<label>Fecha</label><input type="date" id="dia">
+				<label>Cantidad</label><input type="number" id="cant">
+			</div>
+			<div class="lugares">
+				<input type="radio" name="lugar" id="ventana" class="validar-radio" value="ventana"><label for="ventana"> Ventana</label> 
+  			<input type="radio" name="lugar" id="pasillo" class="validar-radio" value="pasillo"><label for="pasillo"> Pasillo</label> 
+  		</div>
+  		<div class="container-button">
+  			<button id="comprar">COMPRAR</button>
+  		</div>
+		</form>
+		<label for="" id="errores"></label>
+		<label for="" id="info-enviada"></label>
+	</section>
+	<script type="text/javascript" src="js/fontawesome-all.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
