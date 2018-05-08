@@ -21,28 +21,33 @@ function validar(){
 
 
       if (origen == -1 ) {
-        alert('Completar origen');
+        $('.errorOrigen').html('Campo obligatorio');
+        //alert('Completar origen');
         valido = false;
 
       }
 
       if (destino == -1) {
-        alert('Completar destino');
+        $('.errorDestino').html('Campo obligatorio');
+      //  alert('Completar destino');
         valido = false;
       }
 
       if (!fecha) {
-        alert("Elegir fecha");
+        $('.errorFecha').html('Campo obligatorio');
+        //alert("Elegir fecha");
         valido = false;
       }
 
       if (cantidad <= 0 || cantidad == "") {
-        alert('Completar cantidad');
+        $('.errorCant').html('Campo obligatorio');
+      //  alert('Completar cantidad');
         valido = false;
       }
 
       if (!asiento) {
-          alert("Seleccionar asiento");
+        $('.errorAsiento').html('Campo obligatorio');
+        //  alert("Seleccionar asiento");
           valido = false;
         }
 
@@ -51,6 +56,7 @@ function validar(){
 
 $("button").on("click", function(e){
   e.preventDefault();
+  $('.error').html('');
   validar();
 
 if (valido == true){
