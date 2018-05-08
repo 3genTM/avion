@@ -1,5 +1,3 @@
-
-
 function validarForm (){
  var obligatorio = $(".Obligatorio");
  var error= $('.error');
@@ -8,17 +6,16 @@ function validarForm (){
   //VALIDAR SELECTS ORIGEN Y DESTINO
    if (obligatorio[i].tagName == "SELECT") {
       if (obligatorio[i].value < 0) {
-      error[i].innerHTML= 'Campo Obligatorio'     
-        }
+        error[i].innerHTML= 'Campo Obligatorio'     
+      }
     }
 
   if (obligatorio[i].tagName == 'INPUT'){
     if(obligatorio[i].value.length == 0){
-      error[i].innerHTML= 'Campo Obligatorio'
+        error[i].innerHTML= 'Campo Obligatorio'
+      }
     }
   }
-  }
-
 
   crearObjeto();
 }
@@ -35,10 +32,7 @@ function crearObjeto(){
   var pasajeJSON = JSON.stringify(pasaje);
   console.log(pasajeJSON)
 
-  $('#comprar').on('click',(e)=>{
-
- // let values = {'asiento': $('#asiento').val()};   
-                                    
+                       
  $.ajax({
           url: "http://mariabelenalegre.com/adApi/avion/checkPasaje.php",
           type: "post",
@@ -56,7 +50,6 @@ function crearObjeto(){
                   console.log("error");
           }
         }); 
-});
 }
 
 $('#comprar').on("click" , (e)=>{
