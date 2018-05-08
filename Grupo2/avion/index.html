@@ -17,7 +17,7 @@
           <option value="Amsterdam">Amsterdam</option>
         </select>
         </label>
-        <label class="error"></label>
+        <label class="errorOrigen error"></label>
       </div>
 
       <div class="destino">
@@ -29,21 +29,21 @@
           <option value="Amsterdam">Amsterdam</option>
         </select>
 
-        <label class="error"></label>
+        <label class="errorDestino error"></label>
       </div>
 
       <div class="fecha">
         <label for="">Fecha
         <input id="fecha" class="obligatorio" type="date" name="fecha" value="">
         </label>
-        <label class="error"></label>
+        <label class="errorFecha error"></label>
       </div>
 
       <div class="">
         <label for="">Cantidad
           <input id="cant" class="obligatorio" type="number" name="cantidad" value="">
           </label>
-          <label class="error"></label>
+          <label class="errorCant error"></label>
       </div>
 
       <div class="btns">
@@ -53,6 +53,7 @@
         <label>Pasillo
         <input type="radio" name="asiento" value="Pasillo">
         </label>
+        <label class="errorAsiento error"></label>
       </div>
 
       <div class="comprar">
